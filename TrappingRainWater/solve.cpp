@@ -2,8 +2,6 @@ class Solution {
 public:
     int trap(vector<int>& height) {
         int n = height.size();
-        if (n < 3) return 0;
-
         int left = 0, right = n - 1;
         int leftmax = 0, rightmax = 0;
         int sumwater = 0;
